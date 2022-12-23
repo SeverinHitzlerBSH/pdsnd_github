@@ -153,7 +153,7 @@ def user_stats(df):
     print('\nCalculating User Stats...\n')
     start_time = time.time()
 
-    # Display counts of user types
+    # Display counts of user types. Not all data files have columns for gender or year of birth.
     print('Counts of user types:')
     user_types = df['User Type'].value_counts()
     print(user_types)
